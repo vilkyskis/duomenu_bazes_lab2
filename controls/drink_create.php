@@ -2,15 +2,13 @@
 
 include 'libraries/drinks.class.php';
 $drinksObj = new drinks();
-include 'libraries/drink_data.class.php';
-$drinkTypeObj = new drinkData();
 
 $formErrors = null;
 $data = array();
 
 // nustatome privalomus laukus
 $required = array('Pavadinimas', 'Kiekis', 'Vieneto_kaina','Galiojimo_data','Pagaminimo_data',
-    'Pakuote','fk_maistingumasid_Maistingumas','fk_Cekisnr','fk_saskaitos_fakturanr');
+    'Pakuote','fk_maistingumasid_Maistingumas');
 
 // maksimalūs leidžiami laukų ilgiai
 $maxLengths = array (
@@ -28,8 +26,7 @@ if(!empty($_POST['submit'])) {
         'Pagaminimo_data' => 'date',
         'Pakuote'  => 'positivenumber',
         'fk_maistingumasid_Maistingumas' => 'positivenumber',
-        'fk_Cekisnr' => 'positivenumber',
-        'fk_saskaitos_fakturanr' => 'positivenumber');
+);
 
     // sukuriame validatoriaus objektą
     include 'utils/validator.class.php';

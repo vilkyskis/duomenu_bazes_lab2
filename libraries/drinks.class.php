@@ -53,7 +53,9 @@ class drinks {
 						LEFT JOIN `{$this->maistingumas_lentele}`
 							ON `{$this->gerimai_lentele}`.`fk_Maistingumasid_Maistingumas`=`{$this->maistingumas_lentele}`.`id_Maistingumas`
 							LEFT JOIN `{$this->pakuote_lentele}`
-							ON `{$this->gerimai_lentele}`.`Pakuote`=`{$this->pakuote_lentele}`.`id_Pakuote`" . $limitOffsetString;
+							ON `{$this->gerimai_lentele}`.`Pakuote`=`{$this->pakuote_lentele}`.`id_Pakuote`
+					ORDER BY `id_Gaivusis_gerimas`
+							" . $limitOffsetString;
         $data = mysql::select($query);
 
         return $data;
@@ -112,16 +114,13 @@ class drinks {
      */
     public function insertDrink($data) {
         $query = "  INSERT INTO {$this->gerimai_lentele}
-								(
-									`Pavadinimas`, 
+								(`Pavadinimas`, 
 									`Kiekis`, 
 									`Vieneto_kaina`, 
 									`Galiojimo_data`, 
 									`Pagaminimo_data`, 
 									`Pakuote`, 
-									`fk_Maistingumasid_Maistingumas`, 
-									`fk_Cekisnr`, 
-									`fk_saskaitos_fakturanr`
+									`fk_Maistingumasid_Maistingumas`
 								)
 								VALUES
 								(
@@ -130,10 +129,8 @@ class drinks {
 									'{$data['Vieneto_kaina']}',
 									'{$data['Galiojimo_data']}',
 									'{$data['Pagaminimo_data']}',
-									'{$data['Pakuote']}',
-									'{$data['fk_Maistingumasid_Maistingumas']}',
-									'{$data['fk_Cekisnr']}',
-									'{$data['fk_saskaitos_fakturanr']}',
+    								'{$data['Pakuote']}',
+									'{$data['fk_Maistingumasid_Maistingumas']}'
 								)";
         mysql::query($query);
     }
@@ -150,10 +147,8 @@ class drinks {
 									`Galiojimo_data` = '{$data['Galiojimo_data']}',
 									`Pagaminimo_data`= '{$data['Pagaminimo_data']}',
 									`Pakuote` = '{$data['Pakuote']}',
-									`fk_Maistingumasid_Maistingumas` = '{$data['fk_Maistingumasid_Maistingumas']}',
-									`fk_Cekisnr` = '{$data['fk_Cekisnr']}',
-									`fk_saskaitos_fakturanr` = '{$data['fk_saskaitos_fakturanr']}',
-					WHERE `id_Gaivusis_gerimas`='{$data['id']}'";
+									`fk_Maistingumasid_Maistingumas` = '{$data['fk_Maistingumasid_Maistingumas']}'
+					WHERE `id_Gaivusis_gerimas`='{$data['id_Gaivusis_gerimas']}'";
         mysql::query($query);
     }
 

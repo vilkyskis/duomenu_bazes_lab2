@@ -1,13 +1,8 @@
 <?php
 
-include 'libraries/cars.class.php';
-$carsObj = new cars();
+include 'libraries/drinks.class.php';
+$drinksObj = new drinks();
 
-include 'libraries/brands.class.php';
-$brandsObj = new brands();
-
-include 'libraries/models.class.php';
-$modelsObj = new models();
 
 $formErrors = null;
 $data = array();
@@ -23,18 +18,13 @@ $maxLengths = array (
 if(!empty($_POST['submit'])) {
     // nustatome laukų validatorių tipus
     $validations = array (
-        'modelis' => 'positivenumber',
-        'valstybinis_nr' => 'alfanum',
-        'pavaru_deze' => 'positivenumber',
-        'degalu_tipas' => 'positivenumber',
-        'kebulas' => 'positivenumber',
-        'bagazo_dydis' => 'positivenumber',
-        'busena' => 'positivenumber',
-        'pagaminimo_data' => 'date',
-        'rida' => 'positivenumber',
-        'vietu_skaicius' => 'positivenumber',
-        'registravimo_data' => 'date',
-        'verte' => 'price'
+        'Pavadinimas' => 'anything',
+        'Kiekis' => 'positivenumber',
+        'Vieneto_kaina' => 'positivenumber',
+        'Galiojimo_data' => 'date',
+        'Pagaminimo_data' => 'date',
+        'Pakuote'  => 'positivenumber',
+        'fk_maistingumasid_Maistingumas' => 'positivenumber'
     );
 
     // sukuriame laukų validatoriaus objektą
@@ -46,27 +36,9 @@ if(!empty($_POST['submit'])) {
         // suformuojame laukų reikšmių masyvą SQL užklausai
         $dataPrepared = $validator->preparePostFieldsForSQL();
 
-        // sutvarkome checkbox reikšmes
-        if(isset($dataPrepared['radijas']) && $dataPrepared['radijas'] == 'on') {
-            $dataPrepared['radijas'] = 1;
-        } else {
-            $dataPrepared['radijas'] = 0;
-        }
-
-        if(isset($dataPrepared['grotuvas']) && $dataPrepared['grotuvas'] == 'on') {
-            $dataPrepared['grotuvas'] = 1;
-        } else {
-            $dataPrepared['grotuvas'] = 0;
-        }
-
-        if(isset($dataPrepared['kondicionierius']) && $dataPrepared['kondicionierius'] == 'on') {
-            $dataPrepared['kondicionierius'] = 1;
-        } else {
-            $dataPrepared['kondicionierius'] = 0;
-        }
 
         // atnaujiname duomenis
-        $carsObj->updateCar($dataPrepared);
+        $drinksObj->updateDrink($dataPrepared);
 
         // nukreipiame vartotoją į automobilių puslapį
         header("Location: index.php?module={$module}&action=list");
@@ -79,10 +51,10 @@ if(!empty($_POST['submit'])) {
     }
 } else {
     // išrenkame elemento duomenis ir jais užpildome formos laukus.
-    $data = $carsObj->getCar($id);
+    $data = $drinksObj->getDrink($id);
 }
 
 // įtraukiame šabloną
-include 'templates/car_form.tpl.php';
+include 'templates/drink_form.tpl.php';
 
 ?>

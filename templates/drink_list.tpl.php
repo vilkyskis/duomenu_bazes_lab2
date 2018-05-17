@@ -1,10 +1,8 @@
-<ul id="pagePath">
-    <li><a href="index.php">Pradžia</a></li>
-    <li>Gerimai</li>
+<ul class="breadcrumb" id="pagePath">
+    <li class="breadcrumb-item"><a href="index.php">Pradžia</a></li>
+    <li class="breadcrumb-item active">Gerimai</li>
 </ul>
-<div id="actions">
-    <a href='index.php?module=<?php echo $module; ?>&action=create'>Naujas gerimas</a>
-</div>
+
 <div class="float-clear"></div>
 
 <?php if(isset($_GET['remove_error'])) { ?>
@@ -12,16 +10,19 @@
         Gerimas nebuvo pašalinta, nes yra įtrauktas į sutartį (-is).
     </div>
 <?php } ?>
-<table class="listTable">
-    <tr>
+<table class="table table-bordered table-striped">
+    <tr class="bg-secondary text-white">
         <th>Id</th>
         <th>Pavadinimas</th>
         <th>Kiekis</th>
         <th>Vieneto kaina</th>
         <th>Galiojimo data</th>
         <th>Pagaminimo data</th>
-        <th>Pakuotė</th>
-        <th></th>
+        <th>Pakuotė </th>
+        <th><div id="actions">
+                <a class="btn btn-light text-black" href='index.php?module=<?php echo $module; ?>&action=create'>Naujas gerimas</a>
+            </div>
+        </th>
     </tr>
     <?php
     // suformuojame lentelę
@@ -36,8 +37,8 @@
             . "<td>{$val['Galiojimo_data']}</td>"
             .  "<td>{$val['name']}</td>"
             . "<td>"
-            . "<a href='#' onclick='showConfirmDialog(\"{$module}\", \"{$val['id_Gaivusis_gerimas']}\"); return false;' title=''>šalinti</a>&nbsp;"
-            . "<a href='index.php?module={$module}&action=edit&id={$val['id']}' title=''>redaguoti</a>"
+            . "<a class='btn btn-danger' href='#' onclick='showConfirmDialog(\"{$module}\", \"{$val['id_Gaivusis_gerimas']}\"); return false;' title=''>šalinti</a>&nbsp;"
+            . "<a class='btn btn-warning' href='index.php?module={$module}&action=edit&id={$val['id_Gaivusis_gerimas']}' title=''>redaguoti</a>"
             . "</td>"
             . "</tr>";
     }

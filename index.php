@@ -1,4 +1,5 @@
 <?php
+
 	// nuskaitome konfigūracijų failą
 	include 'config.php';
 

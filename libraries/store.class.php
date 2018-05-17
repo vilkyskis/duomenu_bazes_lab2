@@ -54,7 +54,7 @@ class store {
 							        {$this->city}.`Pavadinimas` miestopavadinimas
 					FROM {$this->stores}
 					LEFT JOIN {$this->city} ON {$this->stores}.`fk_Miestasid_Miestas`={$this->city}.`id`
-					";
+					". $limitOffsetString;
         $data = mysql::select($query);
 
         return $data;
@@ -65,8 +65,11 @@ class store {
      * @return type
      */
     public function getStoreListCount() {
-        $query = "  SELECT COUNT(`kodas`) as `kiekis`
-					FROM {$this->stores}";
+        $query = "  SELECT COUNT(`{$this->stores}`.`kodas`) AS `kiekis`
+					FROM {$this->stores}
+					LEFT JOIN {$this->city} 
+					  ON {$this->stores}.`fk_Miestasid_Miestas`={$this->city}.`id`
+					";
         $data = mysql::select($query);
 
         return $data[0]['kiekis'];
