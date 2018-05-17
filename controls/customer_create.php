@@ -1,7 +1,7 @@
 <?php
 	
-include 'libraries/customers.class.php';
-$customersObj = new customers();
+include 'libraries/workers.class.php';
+$customersObj = new workers();
 
 $formErrors = null;
 $data = array();

@@ -20,7 +20,7 @@ class city {
     public function getCity($id) {
         $query = "  SELECT *
 					FROM {$this->cities}
-					WHERE `id_Miestas`='{$id}'";
+					WHERE `id`='{$id}'";
         $data = mysql::select($query);
 
         return $data[0];
@@ -54,7 +54,7 @@ class city {
      * @return type
      */
     public function getCityListCount() {
-        $query = "  SELECT COUNT(`id_Miestas`) as `kiekis`
+        $query = "  SELECT COUNT(`id`) as `kiekis`
 					FROM {$this->cities}";
         $data = mysql::select($query);
 
@@ -84,7 +84,7 @@ class city {
     public function updateCity($data) {
         $query = "  UPDATE {$this->cities}
 					SET    `Pavadinimas`='{$data['Pavadinimas']}',
-					WHERE `id_Miestas`='{$data['id']}'";
+					WHERE `id`='{$data['id']}'";
         mysql::query($query);
     }
 
@@ -94,7 +94,7 @@ class city {
      */
     public function deleteCity($id) {
         $query = "  DELETE FROM {$this->cities}
-					WHERE `id_Miestas`='{$id}'";
+					WHERE `id`='{$id}'";
         mysql::query($query);
     }
 }
