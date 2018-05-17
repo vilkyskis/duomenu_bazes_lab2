@@ -20,9 +20,6 @@
 					<ul class="float-left">
 						<li><a href="index.php?module=customer&action=list" title="Klientai"<?php if($module == 'customer') { echo 'class="active"'; } ?>>Klientai</a></li>
 						<li><a href="index.php?module=employee&action=list" title="Darbuotojai"<?php if($module == 'employee') { echo 'class="active"'; } ?>>Darbuotojai</a></li>
-						<li><a href="index.php?module=car&action=list" title="Automobiliai"<?php if($module == 'car') { echo 'class="active"'; } ?>>Automobiliai</a></li>
-						<li><a href="index.php?module=brand&action=list" title="Markės"<?php if($module == 'brand') { echo 'class="active"'; } ?>>Markės</a></li>
-						<li><a href="index.php?module=model&action=list" title="Modeliai"<?php if($module == 'model') { echo 'class="active"'; } ?>>Modeliai</a></li>
                         <li><a href="index.php?module=drink&action=list" title="Gerimai"<?php if($module == 'drink') { echo 'class="active"'; } ?>>Gerimai</a></li>
                         <li><a href="index.php?module=store&action=list" title="Parduotuve"<?php if($module == 'store') { echo 'class="active"'; } ?>>Parduotuve</a></li>
                         <li><a href="index.php?module=city&action=list" title="Miestas"<?php if($module == 'city') { echo 'class="active"'; } ?>>Miestas</a></li>

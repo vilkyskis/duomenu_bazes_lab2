@@ -4,6 +4,7 @@
 </ul>
 <div id="actions">
     <a href='index.php?module=<?php echo $module; ?>&action=create'>Naujas miestas</a>
+    <a href='index.php?module=<?php echo $module; ?>&action=create_more'>Nauji miestai</a>
 </div>
 <div class="float-clear"></div>
 
@@ -24,7 +25,7 @@
         echo
             "<tr>"
             . "<td>{$val['id']}</td>"
-            . "<td>{$val['pavadinimas']}</td>"
+            . "<td>{$val['Pavadinimas']}</td>"
             . "<td>"
             . "<a href='#' onclick='showConfirmDialog(\"{$module}\", \"{$val['id']}\"); return false;' title=''>šalinti</a>&nbsp;"
             . "<a href='index.php?module={$module}&action=edit&id={$val['id']}' title=''>redaguoti</a>"

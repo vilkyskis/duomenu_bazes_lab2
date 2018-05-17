@@ -9,7 +9,7 @@ class city {
     private $cities = '';
 
     public function __construct() {
-        $this->cities = config::DB_PREFIX . 'miestai';
+        $this->cities = config::DB_PREFIX . 'miestas';
     }
 
     /**
@@ -96,5 +96,24 @@ class city {
         $query = "  DELETE FROM {$this->cities}
 					WHERE `id`='{$id}'";
         mysql::query($query);
+    }
+
+    /**
+     * Užsakytų papildomų paslaugų atnaujinimas
+     * @param type $data
+     */
+    public function insertMultipleCities($data) {
+            foreach($data['Pavadinimas'] as $key=>$val) {
+
+                $query = "  INSERT INTO `{$this->cities}`
+										(
+											`Pavadinimas`
+										)
+										VALUES
+										(
+											'{$data['Pavadinimas'][$key]}'
+										)";
+                mysql::query($query);
+            }
     }
 }

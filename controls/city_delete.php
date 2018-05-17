@@ -1,11 +1,11 @@
 <?php
 
-include 'libraries/drinks.class.php';
-$storeObj = new store();
+include 'libraries/city.class.php';
+$cityObj = new city();
 
 if(!empty($id)) {
 
-    $storeObj->deleteStore($id);
+    $cityObj->deleteCity($id);
 
     // nukreipiame į automobilių puslapį
     header("Location: index.php?module={$module}&action=list{$removeErrorParameter}");

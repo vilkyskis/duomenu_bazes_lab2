@@ -11,7 +11,7 @@ class store {
 
     public function __construct() {
         $this->stores = config::DB_PREFIX . 'parduotuve';
-        $this->city = config::DB_PREFIX . 'miestai';
+        $this->city = config::DB_PREFIX . 'miestas';
     }
 
     /**
