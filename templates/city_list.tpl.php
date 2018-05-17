@@ -1,6 +1,8 @@
-<ul class="breadcrumb" id="pagePath">
+<ul class="breadcrumb bg-dark" id="pagePath">
     <li class="breadcrumb-item"><a href="index.php">Pradžia</a></li>
     <li class="breadcrumb-item active">Miestai</li>
+    <li class="breadcrumb-item"><a href='index.php?module=<?php echo $module; ?>&action=create'>Naujas miestas</a></li>
+    <li class="breadcrumb-item"><a href='index.php?module=<?php echo $module; ?>&action=create_more'>Nauji miestai</a></li>
 </ul>
 
 <div class="float-clear"></div>
@@ -10,12 +12,8 @@
         Miestas nebuvo pašalintas, nes yra įtrauktas į sutartį (-is).
     </div>
 <?php } ?>
-<div id="actions" align="center" class="container">
-    <a class="btn btn-primary" href='index.php?module=<?php echo $module; ?>&action=create'>Naujas miestas</a>
-    <a class="btn btn-primary" href='index.php?module=<?php echo $module; ?>&action=create_more'>Nauji miestai</a>
-</div>
 <div class="container">
-    <table class="table table-bordered table-striped text-center">
+    <table class="table table-bordered table-striped">
         <tr class="bg-secondary text-white">
             <th>Id</th>
             <th>Pavadinimas</th>

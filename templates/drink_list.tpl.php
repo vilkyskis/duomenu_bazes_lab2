@@ -1,6 +1,7 @@
-<ul class="breadcrumb" id="pagePath">
+<ul class="breadcrumb bg-dark" id="pagePath">
     <li class="breadcrumb-item"><a href="index.php">Pradžia</a></li>
     <li class="breadcrumb-item active">Gerimai</li>
+    <li class="breadcrumb-item"><a href='index.php?module=<?php echo $module; ?>&action=create'>Naujas gerimas</a></li>
 </ul>
 
 <div class="float-clear"></div>
@@ -19,10 +20,7 @@
         <th>Galiojimo data</th>
         <th>Pagaminimo data</th>
         <th>Pakuotė </th>
-        <th><div id="actions">
-                <a class="btn btn-light text-black" href='index.php?module=<?php echo $module; ?>&action=create'>Naujas gerimas</a>
-            </div>
-        </th>
+        <th></th>
     </tr>
     <?php
     // suformuojame lentelę

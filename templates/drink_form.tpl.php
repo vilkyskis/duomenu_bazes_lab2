@@ -1,4 +1,4 @@
-<ul class="breadcrumb" id="pagePath">
+<ul class="breadcrumb bg-dark" id="pagePath">
     <li class="breadcrumb-item"><a href="index.php">Pradžia</a></li>
     <li class="breadcrumb-item"><a href="index.php?module=<?php echo $module; ?>&action=list">Gerimai</a></li>
     <li class="breadcrumb-item active"><?php if(!empty($id)) echo "Gėrimo redagavimas"; else echo "Nauja Gėrimas"; ?></li>

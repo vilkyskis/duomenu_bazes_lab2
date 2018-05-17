@@ -1,10 +1,11 @@
-<ul id="pagePath">
-    <li><a href="index.php">Pradžia</a></li>
-    <li><a href="index.php?module=<?php echo $module; ?>&action=list">Miestai</a></li>
-    <li><?php if(!empty($id)) echo "Miesto redagavimas"; else echo "Naujas miestas"; ?></li>
+<ul class="breadcrumb bg-dark" id="pagePath">
+    <li class="breadcrumb-item"><a href="index.php">Pradžia</a></li>
+    <li class="breadcrumb-item"><a href="index.php?module=<?php echo $module; ?>&action=list">Miestai</a></li>
+    <li class="breadcrumb-item active"><?php if(!empty($id)) echo "Miesto redagavimas"; else echo "Naujas miestas"; ?></li>
+    <li class="breadcrumb-item"><a href='index.php?module=<?php echo $module; ?>&action=create_more'>Nauji miestai</a></li>
 </ul>
 <div class="float-clear"></div>
-<div id="formContainer">
+<div id="formContainer" class="container">
     <?php if($formErrors != null) { ?>
         <div class="errorBox">
             Neįvesti arba neteisingai įvesti šie laukai:
@@ -24,8 +25,8 @@
 
         </fieldset>
         <p class="required-note">* pažymėtus laukus užpildyti privaloma</p>
-        <p>
-            <input type="submit" class="submit button" name="submit" value="Išsaugoti">
+        <p align="center">
+            <input type="submit" class="submit button btn btn-primary" name="submit" value="Išsaugoti">
         </p>
         <?php if(isset($data['id'])) { ?>
             <input type="hidden" name="id" value="<?php echo $data['id']; ?>" />

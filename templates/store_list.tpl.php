@@ -1,6 +1,8 @@
-<ul class="breadcrumb" id="pagePath">
+<ul class="breadcrumb bg-dark" id="pagePath">
     <li class="breadcrumb-item"><a href="index.php">Pradžia</a></li>
-    <li class="breadcrumb-item active">Gerimai</li>
+    <li class="breadcrumb-item active">Parduotuvės</li>
+    <li class="breadcrumb-item"><a href='index.php?module=<?php echo $module; ?>&action=create'>Nauja parduotuvė</a></li>
+    <li class="breadcrumb-item"><a href='index.php?module=<?php echo $module; ?>&action=create_more'>Naujos parduotuvės</a></li>
 </ul>
 <div class="float-clear"></div>
 
@@ -13,12 +15,10 @@
     <tr class="bg-secondary text-white">
         <th>Kodas</th>
         <th>Pavadinimas</th>
-        <th>adresas</th>
-        <th>internetine svetaine</th>
-        <th>telefonas</th>
-        <th>el pastas</th>
-        <th>miestas</th>
-        <th>veiksmai</th>
+        <th>Adresas</th>
+        <th>Internetine svetaine</th>
+        <th>Miestas</th>
+        <th>Veiksmai</th>
     </tr>
     <?php
     // suformuojame lentelę
@@ -29,12 +29,10 @@
             . "<td>{$val['Pavadinimas']}</td>"
             . "<td>{$val['Adresas']}</td>"
             . "<td>{$val['internetine_svetaine']}</td>"
-            . "<td>{$val['telefonas']}</td>"
-            . "<td>{$val['el_pastas']}</td>"
             .  "<td>{$val['miestopavadinimas']}</td>"
             . "<td>"
             . "<a class='btn btn-danger' href='#' onclick='showConfirmDialog(\"{$module}\", \"{$val['kodas']}\"); return false;' title=''>šalinti</a>&nbsp;"
-            . "<a class='btn btn-warning' href='index.php?module={$module}&action=edit&id={$val['id']}' title=''>redaguoti</a>"
+            . "<a class='btn btn-warning' href='index.php?module={$module}&action=edit&id={$val['kodas']}' title=''>redaguoti</a>"
             . "</td>"
             . "</tr>";
     }
@@ -45,6 +43,3 @@
 // įtraukiame puslapių šabloną
 include 'templates/paging.tpl.php';
 ?>
-<div align="center">
-    <a class="btn btn-primary text-center" href='index.php?module=<?php echo $module; ?>&action=create'>Nauja parduotuvė</a>
-</div>

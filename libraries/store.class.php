@@ -60,6 +60,32 @@ class store {
         return $data;
     }
 
+
+    /**
+     * Gėrimų sąrašo išrinkimas
+     * @param type $limit
+     * @param type $offset
+     * @return type
+     */
+    public function getCityList($limit = null, $offset = null) {
+        $limitOffsetString = "";
+        if(isset($limit)) {
+            $limitOffsetString .= " LIMIT {$limit}";
+
+            if(isset($offset)) {
+                $limitOffsetString .= " OFFSET {$offset}";
+            }
+        }
+
+        $query = "  SELECT *
+					FROM {$this->city}
+					";
+        $data = mysql::select($query);
+
+        return $data;
+    }
+
+
     /**
      * Gėrimų kiekio radimas
      * @return type
@@ -87,17 +113,18 @@ class store {
 									`internetine_svetaine`,
 									`telefonas`,
 									`el_pastas`,
-									`fk_Miestasid_Miestas`,
+									`fk_Miestasid_Miestas`
 								)
 								VALUES
 								(
-									'{$data['Pavadinimas']}',
+									'{$data['pard_Pavadinimas']}',
 									'{$data['adresas']}',
 									'{$data['internetine_svetaine']}',
 									'{$data['telefonas']}',
 									'{$data['el_pastas']}',
-									'{$data['fk_Miestasid_Miestas']}',
-								)";
+									'{$data['Miestas']}'
+								)
+								";
         mysql::query($query);
     }
 
@@ -105,15 +132,16 @@ class store {
      * Gėrimų atnaujinimas
      * @param type $data
      */
-    public function updateStore($data) {
-        $query = "  UPDATE {$this->stores}
-					SET    `Pavadinimas`='{$data['Pavadinimas']}',
+    public function updateStore($data,$id) {
+        $query = "  UPDATE `{$this->stores}`
+					SET    `{$this->stores}`.`Pavadinimas`='{$data['pard_Pavadinimas']}',
 					        `Adresas`='{$data['adresas']}',
 					        `internetine_svetaine`='{$data['internetine_svetaine']}',
 					        `telefonas`='{$data['telefonas']}',
 					        `el_pastas`='{$data['el_pastas']}',
-					        `fk_Miestasid_Miestas`='{$data['fk_Miestasid_Miestas']}',
-					WHERE `kodas`='{$data['id']}'";
+					        `fk_Miestasid_Miestas`='{$data['Miestas']}'
+					WHERE `kodas`='{$id}'
+					";
         mysql::query($query);
     }
 
@@ -125,5 +153,30 @@ class store {
         $query = "  DELETE FROM {$this->stores}
 					WHERE `kodas`='{$id}'";
         mysql::query($query);
+    }
+    public function insertMultipleStores($data) {
+        foreach($data['pard_Pavadinimas'] as $key=>$val) {
+
+            $query = "  INSERT INTO {$this->stores}
+								(
+									`Pavadinimas`,
+									`Adresas`,
+									`internetine_svetaine`,
+									`telefonas`,
+									`el_pastas`,
+									`fk_Miestasid_Miestas`
+								)
+								VALUES
+								(
+									'{$data['pard_Pavadinimas'][$key]}',
+									'{$data['adresas'][$key]}',
+									'{$data['internetine_svetaine'][$key]}',
+									'{$data['telefonas'][$key]}',
+									'{$data['el_pastas'][$key]}',
+									'{$data['Miestas']}'
+								)
+								";
+            mysql::query($query);
+        }
     }
 }

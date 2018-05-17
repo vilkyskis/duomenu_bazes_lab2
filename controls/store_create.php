@@ -1,9 +1,7 @@
 <?php
 
 include 'libraries/store.class.php';
-$storesObj = new store();
-include 'libraries/city.class.php';
-$cityObj = new city();
+$storeObj = new store();
 
 $formErrors = null;
 $data = array();
@@ -21,8 +19,8 @@ $maxLengths = array (
 if(!empty($_POST['submit'])) {
     // nustatome laukų validatorių tipus
     $validations = array (
-        'Adresas' => 'anything',
-        'Pavadinimas' => 'anything');
+        'Adresas' => 'alphanumeric',
+        'Pavadinimas' => 'words');
 
     // sukuriame validatoriaus objektą
     include 'utils/validator.class.php';
@@ -33,7 +31,7 @@ if(!empty($_POST['submit'])) {
         $dataPrepared = $validator->preparePostFieldsForSQL();
 
         // įrašome naują įrašą
-        $storesObj->insertStore($dataPrepared);
+        $storeObj->insertStore($dataPrepared);
 
         // nukreipiame į markių puslapį
         header("Location: index.php?module={$module}&action=list");
@@ -47,6 +45,6 @@ if(!empty($_POST['submit'])) {
 }
 
 // įtraukiame šabloną
-include 'templates/drink_form.tpl.php';
+include 'templates/store_form.tpl.php';
 
 ?>

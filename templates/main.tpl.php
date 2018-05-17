@@ -12,16 +12,19 @@
 		<script type="text/javascript" src="scripts/main.js"></script>
 	</head>
     <nav class="navbar navbar-expand-md bg-primary navbar-dark">
-        <a class="navbar-brand" href="index.php">Automobilių nuomos IS</a>
-        <ul class="navbar-nav float-right">
-            <li class="nav-item"><a class="nav-link" href="index.php?module=customer&action=list" title="Klientai"<?php if($module == 'customer') { echo 'class="active"'; } ?>>Klientai</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.php?module=employee&action=list" title="Darbuotojai"<?php if($module == 'employee') { echo 'class="active"'; } ?>>Darbuotojai</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.php?module=drink&action=list" title="Gerimai"<?php if($module == 'drink') { echo 'class="active"'; } ?>>Gerimai</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.php?module=store&action=list" title="Parduotuve"<?php if($module == 'store') { echo 'class="active"'; } ?>>Parduotuve</a></li>
-            <li class="nav-item"><a class="nav-link" href="index.php?module=city&action=list" title="Miestas"<?php if($module == 'city') { echo 'class="active"'; } ?>>Miestas</a></li>
-        </ul>
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="index.php">Gėrimų prekybos gamybos IS</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="nav-item "><a class="nav-link" href="index.php?module=drink&action=list" title="Gerimai"<?php if($module == 'drink') { echo 'class="active"'; } ?>>Gerimai</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.php?module=store&action=list" title="Parduotuve"<?php if($module == 'store') { echo 'class="active"'; } ?>>Parduotuve</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.php?module=city&action=list" title="Miestas"<?php if($module == 'city') { echo 'class="active"'; } ?>>Miestas</a></li>
+            </ul>
+        </div>
+
     </nav>
-	<body>
+	<body class="bg-dark text-white">
 
 					<?php
 						// įtraukiame veiksmų failą
