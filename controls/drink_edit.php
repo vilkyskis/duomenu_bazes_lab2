@@ -8,7 +8,7 @@ $formErrors = null;
 $data = array();
 
 // nustatome privalomus laukus
-$required = array('modelis', 'valstybinis_nr', 'pagaminimo_data', 'pavaru_deze', 'degalu_tipas', 'kebulas', 'bagazo_dydis', 'busena', 'rida', 'vietu_skaicius', 'registravimo_data', 'verte');
+$required = array('Pavadinimas', 'Kiekis', 'Vieneto_kaina', 'Galiojimo_data', 'Pagaminimo_data', 'Pakuote');
 
 // maksimalūs leidžiami laukų ilgiai
 $maxLengths = array (
@@ -23,8 +23,7 @@ if(!empty($_POST['submit'])) {
         'Vieneto_kaina' => 'positivenumber',
         'Galiojimo_data' => 'date',
         'Pagaminimo_data' => 'date',
-        'Pakuote'  => 'positivenumber',
-        'fk_maistingumasid_Maistingumas' => 'positivenumber'
+        'Pakuote'  => 'positivenumber'
     );
 
     // sukuriame laukų validatoriaus objektą
@@ -38,7 +37,7 @@ if(!empty($_POST['submit'])) {
 
 
         // atnaujiname duomenis
-        $drinksObj->updateDrink($dataPrepared);
+        $drinksObj->updateDrink($dataPrepared,$id);
 
         // nukreipiame vartotoją į automobilių puslapį
         header("Location: index.php?module={$module}&action=list");

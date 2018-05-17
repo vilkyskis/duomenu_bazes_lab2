@@ -47,8 +47,7 @@
                     $type = $drinksObj->getDrinkTypeList();
                     foreach($type as $key => $val) {
                         $selected = "";
-                        if(isset($data['name']) && $data['name'] == $val['id_Pakuote']) {
-
+                        if(isset($data['Pakuote']) && $data['Pakuote'] == $val['id_Pakuote']) {
                             $selected = " selected='selected'";
                         }
                         echo "<option{$selected} value='{$val['id_Pakuote']}'>{$val['name']}</option>";
@@ -56,12 +55,6 @@
                     ?>
                 </select>
             </p>
-
-            <p>
-                <label class="field" for="fk_Maistingumasid_Maistingumas">fk_Maistingumas<?php echo in_array('fk_Maistingumasid_Maistingumas', $required) ? '<span> *</span>' : ''; ?></label>
-                <input type="text" id="fk_Maistingumasid_Maistingumas" name="fk_Maistingumasid_Maistingumas" class="textbox textbox-30" value="<?php echo isset($data['fk_Maistingumasid_Maistingumas']) ? $data['fk_Maistingumasid_Maistingumas'] : ''; ?>">
-            </p>
-
         </fieldset>
         <p class="required-note">* pažymėtus laukus užpildyti privaloma</p>
         <p>

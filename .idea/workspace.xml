@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/templates/drink_form.tpl.php" line="69" />
+    <bookmark url="file://$PROJECT_DIR$/templates/drink_form.tpl.php" line="62" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92cda0a4-5113-467c-bb5f-2bc91f95c564" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controls/drink_create.php" beforeDir="false" afterPath="$PROJECT_DIR$/controls/drink_create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controls/drink_delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/controls/drink_delete.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controls/drink_edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/controls/drink_edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/libraries/drinks.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/drinks.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libraries/store.class.php" beforeDir="false" afterPath="$PROJECT_DIR$/libraries/store.class.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/city_list.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/city_list.tpl.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/drink_form.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/drink_form.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/drink_list.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/drink_list.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/paging.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/paging.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/store_list.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/store_list.tpl.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -74,44 +68,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="225">
-      <file leaf-file-name="drinks.class.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="drinks.class.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/libraries/drinks.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="140" column="7" selection-start-line="140" selection-start-column="7" selection-end-line="140" selection-end-column="7" />
+            <state relative-caret-position="482">
+              <caret line="146" column="20" selection-start-line="146" selection-start-column="20" selection-end-line="146" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="drink_create.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controls/drink_create.php">
+      <file leaf-file-name="car_edit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controls/car_edit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
-              <caret line="55" column="2" lean-forward="true" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="employee_create.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controls/employee_create.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="cars.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/libraries/cars.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1904">
-              <caret line="155" column="130" selection-start-line="155" selection-start-column="110" selection-end-line="155" selection-end-column="130" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="city_form_more.tpl.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/city_form_more.tpl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="602">
-              <caret line="43" column="6" lean-forward="true" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
-            </state>
+            <state relative-caret-position="-268" />
           </provider>
         </entry>
       </file>
@@ -124,10 +93,37 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="drink_create.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controls/drink_create.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="364">
+              <caret line="26" column="38" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cars.class.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/libraries/cars.class.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="81" column="48" lean-forward="true" selection-start-line="81" selection-start-column="48" selection-end-line="81" selection-end-column="48" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="drink_edit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controls/drink_edit.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="25" column="38" lean-forward="true" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="drink_list.tpl.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/drink_list.tpl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
+            <state relative-caret-position="530">
               <caret line="40" column="116" selection-start-line="40" selection-start-column="97" selection-end-line="40" selection-end-column="116" />
               <folding>
                 <element signature="e#334#340#1" expanded="true" />
@@ -136,31 +132,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="drink_form.tpl.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="drink_form.tpl.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/drink_form.tpl.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="839">
-              <caret line="70" column="58" selection-start-line="70" selection-start-column="58" selection-end-line="70" selection-end-column="58" />
+            <state relative-caret-position="350">
+              <caret line="25" column="171" selection-start-line="25" selection-start-column="171" selection-end-line="25" selection-end-column="171" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="car_form.tpl.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/car_form.tpl.php">
+      <file leaf-file-name="drink_delete.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controls/drink_delete.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1541" />
+            <state relative-caret-position="140">
+              <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
+            </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="car_list.tpl.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/car_list.tpl.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#251#257#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+      <file leaf-file-name="customer_delete.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controls/customer_delete.php">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -178,7 +170,6 @@
         <option value="$PROJECT_DIR$/libraries/drink.class.php" />
         <option value="$PROJECT_DIR$/libraries/worker.class.php" />
         <option value="$PROJECT_DIR$/controls/drink_list.php" />
-        <option value="$PROJECT_DIR$/controls/drink_delete.php" />
         <option value="$PROJECT_DIR$/libraries/drink_data.class.php" />
         <option value="$PROJECT_DIR$/controls/store_create.php" />
         <option value="$PROJECT_DIR$/controls/store_delete.php" />
@@ -200,11 +191,12 @@
         <option value="$PROJECT_DIR$/libraries/store.class.php" />
         <option value="$PROJECT_DIR$/templates/store_list.tpl.php" />
         <option value="$PROJECT_DIR$/templates/city_list.tpl.php" />
-        <option value="$PROJECT_DIR$/controls/drink_create.php" />
-        <option value="$PROJECT_DIR$/controls/drink_edit.php" />
         <option value="$PROJECT_DIR$/templates/drink_list.tpl.php" />
-        <option value="$PROJECT_DIR$/libraries/drinks.class.php" />
+        <option value="$PROJECT_DIR$/controls/drink_create.php" />
+        <option value="$PROJECT_DIR$/controls/drink_delete.php" />
         <option value="$PROJECT_DIR$/templates/drink_form.tpl.php" />
+        <option value="$PROJECT_DIR$/controls/drink_edit.php" />
+        <option value="$PROJECT_DIR$/libraries/drinks.class.php" />
       </list>
     </option>
   </component>
@@ -406,12 +398,12 @@
       <workItem from="1526315539911" duration="3294000" />
       <workItem from="1526319126849" duration="2701000" />
       <workItem from="1526494698351" duration="4700000" />
-      <workItem from="1526534313474" duration="27995000" />
+      <workItem from="1526534313474" duration="30795000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46733000" />
+    <option name="totallyTimeSpent" value="49533000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -431,9 +423,9 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" />
       <window_info anchor="bottom" id="Run" order="3" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.35889572" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.18404908" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.19734152" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19341126" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.19341126" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.32996812" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -449,6 +441,30 @@
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="2" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="Database Console" order="0" weight="0.19734152" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="3" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19341126" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32924336" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="PHP-CGI Server" order="11" />
+      <window_info anchor="bottom" id="Find" order="2" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32996812" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.18404908" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="12" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -457,16 +473,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/controls/store_edit.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="das://7b204d6b-81e9-4bd9-a468-c5ee7561aa71/schema/gerimai/table/mokejimas">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7b204d6b-81e9-4bd9-a468-c5ee7561aa71/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -500,13 +506,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/controls/city_edit.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controls/city_delete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/controls/city_list.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -654,9 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controls/drink_delete.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/controls/drink_list.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -667,13 +663,6 @@
           <folding>
             <element signature="e#6#54#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controls/drink_edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="57" column="24" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -698,13 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controls/drink_create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="55" column="2" lean-forward="true" selection-start-line="55" selection-start-column="2" selection-end-line="55" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/controls/employee_create.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -712,13 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="602">
           <caret line="43" column="6" lean-forward="true" selection-start-line="43" selection-start-column="6" selection-end-line="43" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/city_form.tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="406">
-          <caret line="29" column="8" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="31" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -736,23 +711,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libraries/cars.class.php">
+    <entry file="file://$PROJECT_DIR$/controls/city_delete.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1904">
-          <caret line="155" column="130" selection-start-line="155" selection-start-column="110" selection-end-line="155" selection-end-column="130" />
+        <state relative-caret-position="196">
+          <caret line="14" column="2" lean-forward="true" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libraries/drinks.class.php">
+    <entry file="file://$PROJECT_DIR$/controls/customer_delete.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controls/drink_delete.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="140" column="7" selection-start-line="140" selection-start-column="7" selection-end-line="140" selection-end-column="7" />
+        <state relative-caret-position="140">
+          <caret line="10" column="60" selection-start-line="10" selection-start-column="60" selection-end-line="10" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/drink_list.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
+        <state relative-caret-position="530">
           <caret line="40" column="116" selection-start-line="40" selection-start-column="97" selection-end-line="40" selection-end-column="116" />
           <folding>
             <element signature="e#334#340#1" expanded="true" />
@@ -760,10 +738,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/city_form.tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="29" column="8" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="31" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controls/car_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-268" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libraries/cars.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="81" column="48" lean-forward="true" selection-start-line="81" selection-start-column="48" selection-end-line="81" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controls/drink_create.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="26" column="38" lean-forward="true" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controls/drink_edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="25" column="38" lean-forward="true" selection-start-line="25" selection-start-column="38" selection-end-line="25" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/drink_form.tpl.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="839">
-          <caret line="70" column="58" selection-start-line="70" selection-start-column="58" selection-end-line="70" selection-end-column="58" />
+        <state relative-caret-position="350">
+          <caret line="25" column="171" selection-start-line="25" selection-start-column="171" selection-end-line="25" selection-end-column="171" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libraries/drinks.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="482">
+          <caret line="146" column="20" selection-start-line="146" selection-start-column="20" selection-end-line="146" selection-end-column="20" />
         </state>
       </provider>
     </entry>

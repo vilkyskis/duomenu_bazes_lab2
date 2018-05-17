@@ -8,7 +8,7 @@ $data = array();
 
 // nustatome privalomus laukus
 $required = array('Pavadinimas', 'Kiekis', 'Vieneto_kaina','Galiojimo_data','Pagaminimo_data',
-    'Pakuote','fk_maistingumasid_Maistingumas');
+    'Pakuote');
 
 // maksimalūs leidžiami laukų ilgiai
 $maxLengths = array (
@@ -24,8 +24,7 @@ if(!empty($_POST['submit'])) {
         'Vieneto_kaina' => 'positivenumber',
         'Galiojimo_data' => 'date',
         'Pagaminimo_data' => 'date',
-        'Pakuote'  => 'positivenumber',
-        'fk_maistingumasid_Maistingumas' => 'positivenumber',
+        'Pakuote'  => 'positivenumber'
 );
 
     // sukuriame validatoriaus objektą

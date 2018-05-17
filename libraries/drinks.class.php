@@ -50,8 +50,6 @@ class drinks {
 
         $query = "  SELECT *
 					FROM {$this->gerimai_lentele}
-						LEFT JOIN `{$this->maistingumas_lentele}`
-							ON `{$this->gerimai_lentele}`.`fk_Maistingumasid_Maistingumas`=`{$this->maistingumas_lentele}`.`id_Maistingumas`
 							LEFT JOIN `{$this->pakuote_lentele}`
 							ON `{$this->gerimai_lentele}`.`Pakuote`=`{$this->pakuote_lentele}`.`id_Pakuote`
 					ORDER BY `id_Gaivusis_gerimas`
@@ -119,8 +117,7 @@ class drinks {
 									`Vieneto_kaina`, 
 									`Galiojimo_data`, 
 									`Pagaminimo_data`, 
-									`Pakuote`, 
-									`fk_Maistingumasid_Maistingumas`
+									`Pakuote`
 								)
 								VALUES
 								(
@@ -129,8 +126,7 @@ class drinks {
 									'{$data['Vieneto_kaina']}',
 									'{$data['Galiojimo_data']}',
 									'{$data['Pagaminimo_data']}',
-    								'{$data['Pakuote']}',
-									'{$data['fk_Maistingumasid_Maistingumas']}'
+    								'{$data['Pakuote']}'
 								)";
         mysql::query($query);
     }
@@ -139,16 +135,16 @@ class drinks {
      * Gėrimų atnaujinimas
      * @param type $data
      */
-    public function updateDrink($data) {
-        $query = "  UPDATE {$this->gerimai_lentele}
+    public function updateDrink($data, $id) {
+        $query = "  UPDATE `{$this->gerimai_lentele}`
 					SET    `Pavadinimas`='{$data['Pavadinimas']}',
-									`Kiekis`= '{$data['Kiekis']}',
-									`Vieneto_kaina` = '{$data['Vieneto_kaina']}',
-									`Galiojimo_data` = '{$data['Galiojimo_data']}',
-									`Pagaminimo_data`= '{$data['Pagaminimo_data']}',
-									`Pakuote` = '{$data['Pakuote']}',
-									`fk_Maistingumasid_Maistingumas` = '{$data['fk_Maistingumasid_Maistingumas']}'
-					WHERE `id_Gaivusis_gerimas`='{$data['id_Gaivusis_gerimas']}'";
+									`Kiekis`='{$data['Kiekis']}',
+									`Vieneto_kaina`='{$data['Vieneto_kaina']}',
+									`Galiojimo_data`='{$data['Galiojimo_data']}',
+									`Pagaminimo_data`='{$data['Pagaminimo_data']}',
+									`Pakuote`='{$data['Pakuote']}'
+					WHERE `id_Gaivusis_gerimas`='{$id}'
+					";
         mysql::query($query);
     }
 
